@@ -28,17 +28,22 @@ My pipeline consisted of 5 steps.
 1. To convert the images to grayscale, 
 [image2]: ./test_images_output/gray_solidWhiteCurve.jpg "Grayscale"
 
+<img src="/test_images_output/gray_solidWhiteCurve.jpg" width="480" alt="Grayscale" />
+
 2. Use the gaussian blur helper function to smooth the grayscale image further and pass it to canny edge helper method.
 which returns the image with all the edges
 
 [image3]: ./test_images_output/edges_solidWhiteCurve.jpg "Edges"
+<img src="/test_images_output/edges_solidWhiteCurve.jpg" width="480" alt="Edges" />
 
 3. Now I selected the required region of interest and passed the image through hough transform helper method.
 
 [image4]: ./test_images_output/lines_solidWhiteCurve.jpg "Lines"
+<img src="/test_images_output/lines_solidWhiteCurve.jpg" width="480" alt="Lines" />
 
 4. Finally I use the weightes image which is my final output. which is basically the superimposing of the hough transform lines in my original image.
 [image5]: ./test_images_output/final_solidWhiteCurve.jpg "Final Image"
+<img src="/test_images_output/final_solidWhiteCurve.jpg" width="480" alt="Final Image" />
 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by .
